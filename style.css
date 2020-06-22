@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    padding: 2rem 4rem;
+    margin-bottom: 100vh;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    vertical-align: center;
+    justify-content: center;
+    height: 80vh;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bolder;
+    color: dodgerblue;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 400vh;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+img {
+    display: inline-block;
+    cursor: pointer;
+    width: 28%;
+    height: auto;
+    object-fit: cover;
+    vertical-align: top;
+    padding: 0.25rem;
+    transform: rotate3d(0, 0, 0);
+}
+
+img:hover{
+    transform: rotate3d(10, -2, 3, 45deg) !important;
+    box-shadow: 0px 0px 5px black;
+}
+
+img:active {
+    width: 30%;
+    display: none;
+}
